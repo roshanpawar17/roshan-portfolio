@@ -1,0 +1,134 @@
+@media only screen and (max-width: 800px) {
+
+    .containerp {
+        width: 100%;
+    }
+
+    /* navbar */
+    .nav {
+        justify-content: space-between;
+    }
+
+    .mobile-navbar-btn{
+        display: block;
+    }
+
+    #show-nav,
+    #hide-nav {
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    
+
+    .navigations ul {
+        position: absolute;
+        top: 85px;
+        left: 0px;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        list-style-type: none;
+        opacity: 0;
+        visibility: none;
+    }
+
+    .navigations ul li {
+        /* border: 1px solid red; */
+        padding: 7px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .navigations ul li:nth-child(odd) {
+        background-color: antiquewhite;
+    }
+
+
+    .navigations .active{
+        
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-navbar-btn .btn-show{
+        display: block;
+    }
+
+    .mobile-navbar-btn .btn-hide{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1120px) {
+    /* home */
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home .profile-img {
+        order: -1;
+    }
+
+    .home .profile-container {
+        min-width: 100%;
+        text-align: center;
+
+    }
+
+    /* about */
+    .about {
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+
+
+
+    /* home */
+    .home .profile {
+        font-size: 20px;
+    }
+
+    .home .profile-img img {
+        height: 230px;
+        width: 250px;
+    }
+
+    /* skills */
+    .heading,
+    .txt {
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1265px) {
+
+    /* about */
+    .companyname-location-joindate,
+    .collegename-location-joindate {
+        flex-direction: column;
+    }
+
+    .location {
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 12px;
+    }
+}
